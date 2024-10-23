@@ -1,6 +1,5 @@
 import CheckDelimiter from './CheckDelimiter.js';
 import FindNumberCount from './FindNumberCount.js';
-import ValidateInputData from '../Validation/ValidateInputData.js';
 
 const Calculator = (userInput) => {
   if (userInput.length === 0) {

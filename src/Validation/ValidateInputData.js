@@ -19,5 +19,6 @@ export default function ValidateInputData({
   }
 
   const parseNumbers = userInput.match(REGEX.NUMBER);
+
   return NumberSum(parseNumbers);
 }

@@ -3,6 +3,7 @@ import { REGEX } from '../Constants/Regex.js';
 
 export default function FindNumberCount(userInput) {
   const digits = userInput.match(REGEX.NUMBER);
+  const notDigits = userInput.match(REGEX.NOT_NUMBER);
 
   if (digits == null) {
     throw new Error(`${ERROR_MESSAGE.HEADER}${ERROR_MESSAGE.NUMBER_REQUIRED}`);
@@ -12,7 +13,11 @@ export default function FindNumberCount(userInput) {
     throw new Error(`${ERROR_MESSAGE.HEADER}${ERROR_MESSAGE.INCLUDE_MINUS}`);
   }
 
-  if (digits.length < 2) {
+  if (notDigits !== null) {
+    if (digits.length + notDigits.length < 2) {
+      return true;
+    }
+  } else if (digits.length < 2) {
     return true;
   }
 
