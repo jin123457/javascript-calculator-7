@@ -1,6 +1,6 @@
 import { Console } from '@woowacourse/mission-utils';
 import Calculator from './Utils/Calculator.js';
-import { USER_MESSAGE } from './Constants.js';
+import { USER_MESSAGE } from './Constants/UserMessage.js';
 
 class App {
   async run() {

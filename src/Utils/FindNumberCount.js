@@ -11,4 +11,10 @@ export default function FindNumberCount(userInput) {
   if (digits.length === 1 && userInput[0] === '-') {
     throw new Error(`${ERROR_MESSAGE.HEADER}${ERROR_MESSAGE.INCLUDE_MINUS}`);
   }
+
+  if (digits.length < 2) {
+    return true;
+  }
+
+  return false;
 }

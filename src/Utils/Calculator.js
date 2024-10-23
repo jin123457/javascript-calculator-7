@@ -7,18 +7,11 @@ const Calculator = (userInput) => {
     return 0;
   }
 
-  const numberCount = FindNumberCount(userInput);
-
-  if (numberCount < 2) {
+  if (FindNumberCount(userInput)) {
     return parseInt(userInput, 10);
   }
 
-  const { delimiterSet, findCustom } = CheckDelimiter(userInput);
-  const parseNumbers = ValidateInputData(userInput, delimiterSet, findCustom);
-  const RESULT = parseNumbers.reduce((p, n) => {
-    return parseInt(p, 10) + parseInt(n, 10);
-  }, 0);
-  return RESULT;
+  return CheckDelimiter(userInput);
 };
 
 export default Calculator;
