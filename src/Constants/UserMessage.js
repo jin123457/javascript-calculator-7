@@ -1,6 +1,6 @@
 const USER_MESSAGE = Object.freeze({
-  RESULT: '결과 : ',
   USER_INPUT: '덧셈할 문자열을 입력해 주세요.\n',
+  RESULT: '결과 : ',
 });
 
-export default USER_MESSAGE;
+export default { USER_MESSAGE };

@@ -11,4 +11,4 @@ const REGEX = Object.freeze({
   NOT_NUMBER: /[^\d+]/g,
 });
 
-export default REGEX;
+export default { REGEX };
