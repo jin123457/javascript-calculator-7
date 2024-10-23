@@ -1,4 +1,4 @@
-import { REGEX } from '../Constants.js';
+import { REGEX } from '../Constants/Regex.js';
 import ContainsNegative from './ContainsNegative.js';
 
 export default function IncludeMinus({ delimiter, userInput }) {

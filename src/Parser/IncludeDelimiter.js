@@ -1,4 +1,5 @@
-import { ERROR_MESSAGE, REGEX } from '../Constants.js';
+import { ERROR_MESSAGE } from '../Constants/ErrorMassage.js';
+import { REGEX } from '../Constants/Regex.js';
 import IncludeMinus from '../Validation/IncludeMinus.js';
 
 export default function IncludeDelimiter(userInput) {

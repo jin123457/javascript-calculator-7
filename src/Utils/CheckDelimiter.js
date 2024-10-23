@@ -1,4 +1,4 @@
-import { REGEX } from '../Constants.js';
+import { REGEX } from '../Constants/Regex.js';
 import IncludeDelimiter from '../Parser/IncludeDelimiter.js';
 
 export default function CheckDelimiter(userInput) {

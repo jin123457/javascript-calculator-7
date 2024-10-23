@@ -1,4 +1,5 @@
-import { ERROR_MESSAGE, REGEX } from '../Constants.js';
+import { ERROR_MESSAGE } from '../Constants/ErrorMassage.js';
+import { REGEX } from '../Constants/Regex.js';
 
 export default function ContainsNegative(userInput) {
   if (userInput.match(REGEX.FIND_MINUS)) {

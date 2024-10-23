@@ -1,4 +1,5 @@
-import { ERROR_MESSAGE, REGEX } from '../Constants.js';
+import { ERROR_MESSAGE } from '../Constants/ErrorMassage.js';
+import { REGEX } from '../Constants/Regex.js';
 
 const ValidateInputData = (userInput, delimiterSet, isIncludeCustom) => {
   const VALID_REGEX = new RegExp(
