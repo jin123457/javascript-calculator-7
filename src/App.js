@@ -1,12 +1,12 @@
 import { Console } from '@woowacourse/mission-utils';
-import ParseStr from './Utils/ParseStr.js';
+import Calculator from './Utils/Calculator.js';
+import { USER_MESSAGE } from './Constants.js';
 
 class App {
   async run() {
-    await Console.print('덧셈할 문자열을 입력해 주세요.');
-    const PARSE_STR = await Console.readLineAsync('');
-    const RESULT = ParseStr(PARSE_STR);
-    await Console.print(`결과 : ${RESULT}`);
+    const userInput = await Console.readLineAsync(`${USER_MESSAGE.USER_INPUT}`);
+    const RESULT = Calculator(userInput);
+    Console.print(`${USER_MESSAGE.RESULT}${RESULT}`);
   }
 }
 
