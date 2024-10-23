@@ -6,4 +6,4 @@ const ERROR_MESSAGE = Object.freeze({
   INCLUDE_MINUS: '음수는 문자열에 포함될 수 없습니다.',
 });
 
-export default { ERROR_MESSAGE };
+export { ERROR_MESSAGE };

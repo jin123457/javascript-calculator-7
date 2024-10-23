@@ -3,4 +3,4 @@ const USER_MESSAGE = Object.freeze({
   RESULT: '결과 : ',
 });
 
-export default { USER_MESSAGE };
+export { USER_MESSAGE };
