@@ -5,6 +5,6 @@ import ValidateInputData from '../Validation/ValidateInputData.js';
 export default function CheckDelimiter(userInput) {
   const delimiterSet = new Set([...IncludeDelimiter(userInput)]);
   const isIncludeCustom = REGEX.FIND_CUSTOM.test(userInput);
-
-  return ValidateInputData({ userInput, delimiterSet, isIncludeCustom });
+  ValidateInputData({ userInput, delimiterSet, isIncludeCustom });
+  return { delimiterSet, isIncludeCustom };
 }

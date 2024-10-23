@@ -1,9 +1,9 @@
 import { REGEX } from '../Constants/Regex.js';
 import ContainsNegative from './ContainsNegative.js';
 
-export default function IncludeMinus({ includeDelimiter, userInput }) {
+export default function IncludeMinus({ delimiter, userInput }) {
   if (
-    includeDelimiter.indexOf('-') === -1 ||
+    delimiter.indexOf('-') === -1 ||
     REGEX.TWO_HYPEN_BETWEEN_NUMBER.test(userInput) ||
     REGEX.NOT_DELIMITER_HYPEN.test(userInput)
   ) {
